@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Icon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,26 +16,81 @@
   <!-- Title -->
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
-<body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+<body class="font-DMSans bg-Cream flex flex-col justify-center items-center min-h-screen">
+  <main class="m-4">
+    <section class="flex justify-between items-center bg-SoftRed p-8 rounded-[20px]">
+      <div class="flex flex-col lg:mr-72">
+        <span class="text-white text-base font-normal">
+          My balance
+        </span>
+        <span class="text-white text-3xl font-bold">
+          $921.48
+        </span>
+      </div>
+      <figure>
+        <img src="assets/images/logo.svg" alt="Logo">
+      </figure>
+    </section>
+    <section class="bg-white p-8 rounded-[20px] mt-[25px]">
+      <h1 class="text-DarkBrown text-3xl font-semibold mb-[55px]">Spending - Last 7 days</h1>
+      <div class="flex items-end">
+        <div class="flex flex-col items-center mr-4 relative">
+          <p class="absolute bottom-full hidden bg-DarkBrown rounded-[5px] text-white px-2 py-1 mb-2"></p> 
+          <div class="cursor-pointer bg-SoftRed hover:opacity-90 w-[50px] h-[50px] rounded-[5px]"></div>
+          <p class="text-center text-MediumBrown mt-1">mon</p>
+        </div>
+        <div class="flex flex-col items-center mr-4 relative">
+          <p class="absolute bottom-full hidden bg-DarkBrown rounded-[5px] text-white px-2 py-1 mb-2"></p> 
+          <div class="cursor-pointer bg-SoftRed hover:opacity-90 w-[50px] h-[100px] rounded-[5px]"></div>
+          <p class="text-center text-MediumBrown mt-1">tue</p>
+        </div>
+        <div class="flex flex-col items-center mr-4 relative">
+          <p class="absolute bottom-full hidden bg-DarkBrown rounded-[5px] text-white px-2 py-1 mb-2"></p> 
+          <div class="cursor-pointer bg-Cyan hover:opacity-90 w-[50px] h-[150px] rounded-[5px]"></div>
+          <p class="text-center text-MediumBrown mt-1">wed</p>
+        </div>
+        <div class="flex flex-col items-center mr-4 relative">
+          <p class="absolute bottom-full hidden bg-DarkBrown rounded-[5px] text-white px-2 py-1 mb-2"></p> 
+          <div class="cursor-pointer bg-SoftRed hover:opacity-90 w-[50px] h-[90px] rounded-[5px]"></div>
+          <p class="text-center text-MediumBrown mt-1">thu</p>
+        </div>
+        <div class="flex flex-col items-center mr-4 relative">
+          <p class="absolute bottom-full hidden bg-DarkBrown rounded-[5px] text-white px-2 py-1 mb-2"></p> 
+          <div class="cursor-pointer bg-SoftRed hover:opacity-90 w-[50px] h-[68px] rounded-[5px]"></div>
+          <p class="text-center text-MediumBrown mt-1">fri</p>
+        </div>
+        <div class="flex flex-col items-center mr-4 relative">
+          <p class="absolute bottom-full hidden bg-DarkBrown rounded-[5px] text-white px-2 py-1 mb-2"></p> 
+          <div class="cursor-pointer bg-SoftRed hover:opacity-90 w-[50px] h-[120px] rounded-[5px]"></div>
+          <p class="text-center text-MediumBrown mt-1">sat</p>
+        </div>
+        <div class="flex flex-col items-center relative">
+          <p class="absolute bottom-full hidden bg-DarkBrown rounded-[5px] text-white px-2 py-1 mb-2"></p> 
+          <div class="cursor-pointer bg-SoftRed hover:opacity-90 w-[50px] h-[75px] rounded-[5px]"></div>
+          <p class="text-center text-MediumBrown mt-1">sun</p>
+        </div>
+      </div>
+      <hr class="border-[1px] border-Cream my-9">
+      <div class="flex justify-between items-end">
+        <div class="flex flex-col">
+          <span class="text-lg text-normal text-MediumBrown">
+            Total this month
+          </span>
+          <span class="text-DarkBrown text-5xl font-bold">
+            $478.33
+          </span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg text-DarkBrown font-bold">
+            +2.4%
+          </span>
+          <span class="text-lg text-MediumBrown">
+            from last month
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
