@@ -1,5 +1,7 @@
+// DOM elements 
 const daysBars = document.querySelectorAll('.days-bars')
 
+// Fetching data for chart
 fetch('./assets/js/data.json')
     .then(response => response.json())
     .then(data => {
@@ -7,11 +9,10 @@ fetch('./assets/js/data.json')
             const dayBar = daysBars[index]
             const daysSpends = dayBar.previousElementSibling
 
-           
             dayBar.style.height = '0px'
 
             setTimeout(() => {
-                dayBar.style.transition = 'height 1s ease-out' 
+                dayBar.style.transition = 'height 1s ease-out'
                 dayBar.style.height = `${dayData.amount * 2.95}px`
             }, 100);
 

@@ -17,22 +17,26 @@
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body class="font-DMSans bg-Cream flex flex-col justify-center items-center min-h-screen">
+  <!-- Main Container -->
   <main class="m-4">
+    <!-- Section Content -->
     <section class="flex justify-between items-center bg-SoftRed md:p-8 p-6 rounded-[20px]">
       <div class="flex flex-col lg:mr-72">
         <span class="text-white text-sm font-normal">
           My balance
         </span>
-        <span class="text-white md:text-3xl text-2xl font-bold">
+        <h2 class="text-white md:text-3xl text-2xl font-bold">
           $921.48
-        </span>
+        </h2>
       </div>
       <figure>
         <img src="assets/images/logo.svg" alt="Logo">
       </figure>
     </section>
-    <section class="bg-white md:p-8 p-7 rounded-[20px] mt-[25px]">
+    <!-- Section Expenses Chart -->
+    <section class="bg-VeryPaleOrange md:p-8 p-7 rounded-[20px] mt-[25px]">
       <h1 class="text-DarkBrown md:text-3xl text-xl font-semibold mb-[55px]">Spending - Last 7 days</h1>
+      <!-- Chart -->
       <div class="flex items-end h-[200px]">
         <div class="flex flex-col items-center  md:mr-4 mr-2 relative">
           <p class="days-spends absolute bottom-full hidden bg-DarkBrown rounded-[5px] md:text-base text-sm text-white px-2 py-1 mb-2"></p> 
@@ -71,6 +75,7 @@
         </div>
       </div>
       <hr class="border-[1px] border-Cream my-9">
+      <!-- Content Info -->
       <div class="flex justify-between items-end">
         <div class="flex flex-col">
           <span class="md:text-lg text-base text-normal text-MediumBrown">
